@@ -99,10 +99,10 @@ img{
 .scrcomp{
 	display: none;
 	background-color: rgba(0, 0, 0, .8);
-	top: 84px;
+	top: 10px;
 	left: 10px;
 	right: 10px;
-	position: absolute;
+	position: fixed;
 	height: 80%;
 	padding-top: 10px;
 	padding-bottom: 50px;
