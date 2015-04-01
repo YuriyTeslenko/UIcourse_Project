@@ -13,7 +13,11 @@
 	
 </head>
 <body>
+	<div class="logo">
+			DC
+		</div>
 	<div class="header">
+
 		<ul class="nav">
 			<li class="menu-has-next"><a href="#">Статті</a>
 				<ul class="menu">
@@ -39,12 +43,10 @@
 		</div>
 	</div>
 	<div class="side">
-		<div class="logo">
-			DC
-		</div>
-		
 		<a class="rollup" href="#top">&#58;</a>
 		<a class="rollup" href="#end">&#59;</a>
+		<hr>
+		<a class="rollup">&#97;</a>
 		<hr>
 		
 		
@@ -58,7 +60,7 @@
 	</div>
 	<a name="end"></a>
 	<div class="footer">
-		Powered by Neanderthal В© 2007-2015 DCorp. 
+		Powered by Neanderthal © 2007-2015 DCorp. 
 		<img src="img/neanderthal.jpg">
 	</div>
 
