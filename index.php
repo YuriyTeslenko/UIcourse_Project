@@ -1,43 +1,35 @@
 <?php
 //===============================================================================
-// neanderthal 1.04 DangeCorp SETTINGS
+// neanderthal 2.0 DangeCorp SETTINGS
 
-$dbhost = 'localhost';
-$dbname = 'dcorp';
-$dbuser = 'dcorp';
-$dbpasswd = 'dcorp';
-
-$table_prefix = 'nadc_';
-
-//$ast ='menu'; //Стиль для ссилок, що будуть в меню.
-//$target ='_blank'; //Директива для зовнішніх УРЛ в меню
 // Full path to site dir
 define('SITEROOT', 'n:/home/dcorp.org/www');
 
 // Full site url
 define('SITEURL', 'http://dcorp.org/');
 
-// Debug mode
-//define('_DEBUG', true);
-
+$rewrcorr = 'www';
+$startpage = 'main';
 $templates = SITEROOT.'/templates/';
 $articles = SITEROOT.'/articles/';
-//$img = SITEURL.'img/';
 
 // END OF SETTINGS
 // DO NOT EDIT BOTTOM CONTENT
 //===============================================================================
-//Neaderthal functions
-function mydbque ($e)
-{
-	global $query, $result;
 
-	if (!($result = mysql_query($query) or false) && !$e)
-	{
-		die("Internal Error 2"); // or die("Query failed : " . mysql_error());
-	}
+$inurl=explode('-', trim(str_replace($rewrcorr, '', $_GET['p'])));
+
+$article = array_pop($inurl);
+
+if (!$article) {
+	$article = $startpage;
 }
+$article=$articles.$article.'.html';
 
+if (!file_exists($article))
+{
+	$article =$templates.'error.html';
+}
 
 include($templates.'page.php')
 

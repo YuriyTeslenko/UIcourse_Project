@@ -37,13 +37,15 @@ a:hover {
 }
 .nav{
 	list-style: none;
+	font-weight: bold;
+
 }
 .nav>li{
 	float: left;
 	background-color: #ddc;
 	padding: 3px;
 }
-.nav>li>a{
+.nav a{
 	margin: 10px 15px 10px;
 }
 .menu{
@@ -123,7 +125,9 @@ img{
 	width: auto;
 
 }
-
+p{
+	text-indent: 40px;
+}
 .article{
 	min-width: 680px;
 	max-width: 1024px;

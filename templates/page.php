@@ -7,9 +7,9 @@
 	<meta name="description" content="
 	Ремонт та переробка аудіоапаратури, саморобки, динаміки Ремонт и переделка аудиоаппаратуры, самоделки, динамики" />
     <meta name="keywords" content="ГДН, ГДС, усилитель, підсилювач, акустические, звук, акустичні" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/page.css" />
-	<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
-	<script type="text/javascript" src="js/clockwork.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo SITEURL?>css/page.css" />
+	<script type="text/javascript" src="<?php echo SITEURL?>js/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="<?php echo SITEURL?>js/clockwork.js"></script>
 	
 </head>
 <body>
@@ -17,30 +17,10 @@
 			DC
 		</div>
 	<div class="header">
-
-		<ul class="nav">
-			<li class="menu-has-next"><a href="#">Статті</a>
-				<ul class="menu">
-					<li><a href="http://en.wikipedia.org/wiki/Card_sorting">АЦП на PCM1804</a></li>
-					<li><a href="http://en.wikipedia.org/wiki/Card_sorting">Ремонт Sony TA-313</a></li>
-					<li class="menu-has-sub"><a href="http://en.wikipedia.org/wiki/Card_sorting">Audionote DAC upgrade</a>
-						<ul class="menu">
-							<li><a href="http://silverbackapp.com/">PMD100 Datasheet</a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li class="menu-has-next"><a href="#">Інфо</a>
-				<ul class="menu">
-					<li><a href="#">Схеми</a></li>
-					<li><a href="#">Інструкції</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Музей</a>
-		</ul>
-		<div class="navibar">
-			DCorp. AudioLab / Статті / АЦП на PCM1804 / 
-		</div>
+	<?php include('menu.php')?>		
+	<div class="navibar">
+		DCorp. AudioLab / Статті / АЦП на PCM1804 / 
+	</div>
 	</div>
 	<div class="side">
 		<a class="rollup" href="#top">&#58;</a>
@@ -56,12 +36,12 @@
 	</div>
 	<a name="top"></a>
 	<div class="article">
-	<?php include($articles.'1804adc.html')?>
+	<?php include($article)?>
 	</div>
 	<a name="end"></a>
 	<div class="footer">
 		Powered by Neanderthal © 2007-2015 DCorp. 
-		<img src="img/neanderthal.jpg">
+		<img src="<?php echo SITEURL?>img/neanderthal.jpg">
 	</div>
 
 </body>

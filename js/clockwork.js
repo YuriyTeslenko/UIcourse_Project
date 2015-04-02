@@ -1,4 +1,5 @@
 $(function() {
+	var arturl ="http://dcorp.org/articles/";
 	var sidebar = $("div.side");
 	var txtimg = $("div.article img");
 	var comparewnwd = $("div.scrcomp");
@@ -8,7 +9,7 @@ $(function() {
 	var img2side = '<a class="rollup" href="#">&#40;</a>';
 	var img_compare = '<a class="rollup" href="#">&#68;</a>';
 	var imgisonside = '<span class="rollup" href="#">&#73;</span>';
-			
+
 	sidebar.append(imgclose);
 	var sideclose = sidebar.children("a:last");
 

@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteBase /
+RewriteRule ^.htaccess$ - [F]
+RewriteRule ^([a-zA-Z0-9_-]{1,40})/$ index.php?p=$1
+
