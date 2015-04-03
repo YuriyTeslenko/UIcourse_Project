@@ -7,6 +7,7 @@
 	<meta name="description" content="
 	Ремонт та переробка аудіоапаратури, саморобки, динаміки Ремонт и переделка аудиоаппаратуры, самоделки, динамики" />
     <meta name="keywords" content="ГДН, ГДС, усилитель, підсилювач, акустические, звук, акустичні" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo SITEURL?>css/page.css" />
 	<script type="text/javascript" src="<?php echo SITEURL?>js/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="<?php echo SITEURL?>js/clockwork.js"></script>

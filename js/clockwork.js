@@ -1,5 +1,4 @@
 $(function() {
-	var arturl ="http://dcorp.org/articles/";
 	var sidebar = $("div.side");
 	var txtimg = $("div.article img");
 	var comparewnwd = $("div.scrcomp");
@@ -40,9 +39,7 @@ $(function() {
 					element.after(img_compare);
 					element.next().click(function(){
 						$(imgonside).clone().appendTo(comparewnwd);
-						comparewnwd.append("<br>");
 						$(this).prev().clone().appendTo(comparewnwd);
-						comparewnwd.append("<br>");
 						comparewnwd.append(imgclose);
 						comparewnwd.show();
 						return false;
@@ -53,6 +50,6 @@ $(function() {
 		});
 		return false;
 	});
-	sideclose.click();
+	$(window).width()>800 && sideclose.click();
 
 });
