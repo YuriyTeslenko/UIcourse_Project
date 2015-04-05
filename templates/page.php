@@ -14,9 +14,9 @@
 	
 </head>
 <body>
-	<div class="header">
+	<header>
 		<div class="logo">
-			DC
+			<a href="<?php echo SITEURL?>">DC</a>
 		</div>
 		<form action="<?php echo SITEURL?>" method="post" name="formin">
 			<input name="lbutt[]" type="text" placeholder="login" size="10">
@@ -24,26 +24,27 @@
 			<input name="lbutt[]" type="submit" value="Sign in">
 		</form>
 		<?php include('menu.php');?>
-	</div>
+	</header>
 	
 
 	<div class="side">
 		<a class="rollup" href="#top">&#58;</a>
 		<a class="rollup" href="#end">&#59;</a>
 		<hr>
-		
 	</div>
 	<div class="scrcomp">
 	</div>
+
 	<a name="top"></a>
-	<div class="article">
+	<article>
 	<?php include($article);?>
-	</div>
+	</article>
 	<a name="end"></a>
-	<div class="footer">
+
+	<footer>
 		Powered by Neanderthal © 2007-2015 DCorp. 
 		<img src="<?php echo SITEURL?>img/neanderthal.jpg">
-	</div>
+	</footer>
 
 </body>
 

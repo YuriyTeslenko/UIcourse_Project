@@ -1,6 +1,6 @@
 $(function() {
 	var sidebar = $("div.side");
-	var txtimg = $("div.article img");
+	var txtimg = $("article img");
 	var comparewnwd = $("div.scrcomp");
 	var imgonside = "div.side img";
 
