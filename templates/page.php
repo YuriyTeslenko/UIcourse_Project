@@ -14,30 +14,30 @@
 	
 </head>
 <body>
-	<div class="logo">
+	<div class="header">
+		<div class="logo">
 			DC
 		</div>
-	<div class="header">
-	<?php include('menu.php')?>		
-	<div class="navibar">
-		DCorp. AudioLab / Статті / АЦП на PCM1804 / 
+		<form action="<?php echo SITEURL?>" method="post" name="formin">
+			<input name="lbutt[]" type="text" placeholder="login" size="10">
+			<input name="lbutt[]" type="password" placeholder="password" size="5">
+			<input name="lbutt[]" type="submit" value="Sign in">
+		</form>
+		<?php include('menu.php');?>
 	</div>
-	</div>
+	
+
 	<div class="side">
 		<a class="rollup" href="#top">&#58;</a>
 		<a class="rollup" href="#end">&#59;</a>
 		<hr>
-		<a class="rollup">&#97;</a>
-		<hr>
-		
-		
 		
 	</div>
 	<div class="scrcomp">
 	</div>
 	<a name="top"></a>
 	<div class="article">
-	<?php include($article)?>
+	<?php include($article);?>
 	</div>
 	<a name="end"></a>
 	<div class="footer">
