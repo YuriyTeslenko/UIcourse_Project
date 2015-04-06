@@ -99,6 +99,7 @@ hr {
 	border: 0;
 	border-bottom: 4px solid #ccb;
 	margin: auto;
+	margin-bottom: 4px;
 	width: 80%;
 }
 
@@ -111,10 +112,10 @@ img{
 .scrcomp{
 	display: none;
 	background-color: rgba(0, 0, 0, .8);
-	top: 2px;
-	left: 2px;
-	right: 2px;
-	bottom: 2px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
 	position: fixed;
 	padding-top: 10px;
 	padding-bottom: 60px;
