@@ -5,8 +5,10 @@
 	font-style:normal;
 }
 
-body {
+html,body {
 	margin: 0px;
+	padding: 0px;
+	height: 100%;
 	background-color: #fff;
 	color: #1e0a47;
 	font-family: verdana, arial, helvetica, sans-serif;
@@ -24,6 +26,7 @@ article p a:hover{
 }
 header{
 	background-color: #eed;
+	top:0px;
 	left: 0px;
 	right: 0px;
 	height: 64px;
@@ -57,6 +60,7 @@ header{
 }
 header form{
 	float: right;
+	margin-bottom: -16px;
 }
 
 #logo{
@@ -132,16 +136,19 @@ img{
 article{
 	min-width: 100px;
 	max-width: 1024px;
-	padding-top: 64px;
-	padding-left: 84px;
+	padding-left: 84px;	
 	padding-right: 20px;
-	min-height: 128px;
+	margin-bottom: -30px;
+	min-height: 100%;
 }
 p{
 	text-indent: 40px;
 }
 h1{
 	font-size: 2em;
+}
+.clfix{
+	height: 64px;
 }
 footer{
 	padding-left: 84px;
@@ -150,6 +157,7 @@ footer{
 footer img{
 	width: 18px;
 	display: inline-block;
+	vertical-align: middle;
 }
 @media screen and (max-width:800px) {
 	#side{
@@ -157,7 +165,9 @@ footer img{
 	}
 	article{
 		padding-left: 5px;
-		padding-top: 128px;
+	}
+	.clfix{
+		height: 128px;
 	}
 	header{
 		height: 128px;

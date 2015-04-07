@@ -37,12 +37,13 @@
 
 	<a name="top"></a>
 	<article>
+	<div class="clfix"></div>
 	<?php include($article);?>
+	<div class="clfix"></div>
 	</article>
 	<a name="end"></a>
-
 	<footer>
-		Powered by Neanderthal © 2007-2015 DCorp. 
+		© 2007-2015 DCorp. Powered by Neanderthal  
 		<img src="<?php echo SITEURL?>img/neanderthal.jpg">
 	</footer>
 
