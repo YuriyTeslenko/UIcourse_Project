@@ -100,7 +100,7 @@ a.rollup:hover{
 
 }
 hr {
-	border: 0;
+	border: 0px;
 	border-bottom: 4px solid #ccb;
 	margin: auto;
 	margin-bottom: 4px;
@@ -130,7 +130,7 @@ img{
 }
 #scrcomp>div{
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 	width: 100%;
 }
 article{
@@ -152,6 +152,7 @@ h1{
 }
 footer{
 	padding-left: 84px;
+	padding-right: 20px;
 	font-size: 8pt;
 }
 footer img{
@@ -200,12 +201,19 @@ footer img{
 	header{
 		display: none;
 	}
+	.clfix{
+		display: none;
+	}
 	article{
 		padding-left: 10px;
 		padding-top: 0px;
+		margin-bottom: 0px;
 		color: #000;
 	}
 	.rollup{
 		display: none;
+	}
+	footer{
+		float: right;
 	}
 }
