@@ -59,7 +59,7 @@ header form{
 	float: right;
 }
 
-.logo{
+#logo{
 	position: fixed;
 	width: 60px;
 	height: 64px;
@@ -70,10 +70,10 @@ header form{
 	font-weight: bold;
 	text-shadow: 5px 5px 0px #775;
 }
-.logo a{
+#logo a{
 	color: #f7593e;
 }
-.side{
+#side{
 	width: 64px;
 	position: fixed;
 	overflow-x: hidden;
@@ -106,10 +106,9 @@ hr {
 img{
 	display: block;
 	max-width: 100%;
-	margin-right: auto;
-	margin-left: auto;
+	margin: auto;
 }
-.scrcomp{
+#scrcomp{
 	display: none;
 	background-color: rgba(0, 0, 0, .8);
 	top: 0px;
@@ -120,12 +119,15 @@ img{
 	padding-top: 10px;
 	padding-bottom: 60px;
 	text-align: center;
-
 }
-.scrcomp>img{
+#scrcomp>img{
 	height: 50%;
 	width: auto;
-
+}
+#scrcomp>div{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 article{
 	min-width: 100px;
@@ -150,7 +152,7 @@ footer img{
 	display: inline-block;
 }
 @media screen and (max-width:800px) {
-	.side{
+	#side{
 		display: none;
 	}
 	article{
@@ -179,10 +181,10 @@ footer img{
 	}
 }
 @media print{
-	.side{
+	#side{
 		display: none;
 	}
-	.logo{
+	#logo{
 		display: none;
 	}
 	header{

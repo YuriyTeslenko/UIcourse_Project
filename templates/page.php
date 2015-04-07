@@ -15,7 +15,7 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div id="logo">
 			<a href="<?php echo SITEURL?>">DC</a>
 		</div>
 		<form action="<?php echo SITEURL?>" method="post" name="formin">
@@ -27,12 +27,12 @@
 	</header>
 	
 
-	<div class="side">
+	<div id="side">
 		<a class="rollup" href="#top">&#58;</a>
 		<a class="rollup" href="#end">&#59;</a>
 		<hr>
 	</div>
-	<div class="scrcomp">
+	<div id="scrcomp">
 	</div>
 
 	<a name="top"></a>

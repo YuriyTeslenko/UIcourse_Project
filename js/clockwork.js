@@ -1,10 +1,10 @@
 $(function() {
-	var sidebar = $("div.side");
+	var sidebar = $("#side");
 	var article = $("article");
 	var txtimg = $("article img");
 	var artctrl = ".rollup";
-	var comparewndw = $("div.scrcomp");
-	var imgonside = "div.side img";
+	var comparewndw = $("#scrcomp");
+	var imgonside = "#side img";
 	var maxonside =5;
 
 	var closebtn = '<a name="cls" class="rollup" href="#">&#215;</a>';
@@ -89,7 +89,6 @@ $(function() {
 		}
 		return true;
 	});
-	
 
 	comparewndw.render = function(targetimg, scroll){
 		var compimgs = comparewndw.children("img");
@@ -110,16 +109,16 @@ $(function() {
 			var activeimg = sideimgs[sideimgn];
 		}
 		comparewndw.append(targetimg);
-		comparewndw.append(activeimg);
+		var norendact = $(activeimg).attr("src")==targetimg.attr("src");
+		norendact || comparewndw.append(activeimg);
 		sideimgn && comparewndw.append(toleftbtn);
 		comparewndw.append(closebtn);
 		sideimgn && comparewndw.append(torightbtn);
+		comparewndw.children(artctrl).wrapAll("<div></div>");
 		rerender || comparewndw.show();
+		rerender==1 && targetimg.css({"height":"50%", "width":"auto"});
+		norendact && targetimg.css({"height":"auto", "width":"98%"});
 		return false;
-
-		
-		//$(sideimg).attr("src")==targetimg.attr("src")) {
-		
 	}
 
 	comparewndw.click(function(cmpevent) {
