@@ -18,11 +18,7 @@
 		<div id="logo">
 			<a href="<?php echo SITEURL?>">DC</a>
 		</div>
-		<form action="<?php echo SITEURL?>" method="post" name="formin">
-			<input name="lbutt[]" type="text" placeholder="login" size="10">
-			<input name="lbutt[]" type="password" placeholder="password" size="5">
-			<input name="lbutt[]" type="submit" value="Sign in">
-		</form>
+		<?php include($form.'.php');?>
 		<?php include('menu.php');?>
 	</header>
 	
